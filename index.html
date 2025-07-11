@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberPortfolio</title>
+    <!-- link to font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#home" class="logo">X3n0m</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section -->
+     <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Full-Stack Developer</h1>
+            <p>Building digital experiences that merge creativity with technology</p>
+            <p class="highlight">Specializing in modern web development and software development</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
+        </div>
+        <div class="hero-image">
+            <img src="Real_Xenom_Logo_noBg_White.png" alt="profile" class="profile-img">
+        </div>
+     </section>
+
+     <!-- Skills section -->
+      <section class="skills" id="skills">
+        <h2>Technical Expertise</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-server"></i>
+                <h3>Backend Development</h3>
+                <p>Python, Node.js, C++</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Canva, Inkscape, Piskel</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2>Types of projects</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Websites</h3>
+                <p>Portfolios, Landing pages, E-commerce websites</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Software</h3>
+                <p>Desktop applications, Mobile applications</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Games</h3>
+                <p>2D and 3D games using Godot and librarys</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Have a project or question? Feel free to drop a message!</p>
+        <form class="contact-form" action="https://formsubmit.co/proquincyvd@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+            <!-- beveiliging en extra opties -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </section>
+
+      <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 X3n0m. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+            </div>
+       </footer>
+
+       <!-- link to JavaScript -->
+       <script src="script.js"></script>
+
+</body>
+</html>
