@@ -18,3 +18,17 @@
             navbar.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
         }
     });
+
+    // laat succesmelding zien als ?success=true in URL staat
+    window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        const alertBox = document.getElementById('success-alert');
+        alertBox.classList.add('show');
+
+        // Verberg na 5 seconden automatisch
+        setTimeout(() => {
+            alertBox.classList.remove('show');
+        }, 5000);
+    }
+});

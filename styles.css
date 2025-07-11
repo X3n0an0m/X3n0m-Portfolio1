@@ -293,3 +293,23 @@ footer {
     background: transparent;
     box-shadow: 0 0 15px #ffffff;
 }
+
+.success-alert {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: var(--accent);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--accent-glow);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s ease;
+    z-index: 9999;
+}
+
+.success-alert.show {
+    opacity: 1;
+    pointer-events: auto;
+}
